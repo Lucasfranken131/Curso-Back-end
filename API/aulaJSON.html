@@ -34,23 +34,29 @@
         cidade = document.getElementById("cidade");
         estado = document.getElementById("estado");
         pais = document.getElementById("pais");
-        if(cep < 10000000 || cep > 99999999){
-                alert("burrão");
+        if(cep.value.length == 8){
+            return true
         }
+        return false
     }
     function buscaEndereco(){
-        defineCampos();
-        var url = "https://viacep.com.br/ws/"+cep.value+"/json";
-        var ponte = new XMLHttpRequest();
-        ponte.open('GET',url);
-        ponte.onload = () =>{
-            var resposta = JSON.parse(ponte.responseText);
-            rua.value = resposta.logradouro;
-            bairro.value = resposta.bairro;
-            cidade.value = resposta.localidade;
-            estado.value = resposta.uf;
-            pais.value = "Brasil";
+        if(defineCampos()){
+            var cepValido = cep.value.substr(0,5)+"-"+cep.value.substr(5)
+
+            var url = "./"+cepValido+".json";
+            //http://cdn.apicep.com/file/apicep/.json
+            fetch(url)
+                .then(res => res.json())
+                .then(data => {
+                    rua.value = data.cep.address;
+                    bairro.value = data.cep.district;
+                    cidade.value = data.cep.city;
+                    estado.value = data.cep.state;
+                    pais.value = "Brasil";
+            })
         }
-        ponte.send();
+        else{
+            alert("Errou.");
+        }
     }
 </script>

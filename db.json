@@ -1,43 +1,81 @@
 {
-        "cep":[{
-            "code":"88010-040",
-            "state":"SC",
-            "city":"Florianópolis",
-            "district":"Centro",
-            "address":"Rua Álvaro de Carvalho",
-            "status":200,
-            "ok":true,
-            "statusText":"ok"
-        },
-        {
-            "code":"88030-320",
-            "state":"SC",
-            "city":"Florianópolis",
-            "district":"João Paulo",
-            "address":"Rua São Miguel",
-            "status":200,
-            "ok":true,
-            "statusText":"ok"
-        },
-        {
-            "code":"88131-608",
-            "state":"SC",
-            "city":"Palhoça",
-            "district":"Nova Palhoça",
-            "address":"Rua Vereador Antônio Gaspar Schutz",
-            "status":200,
-            "ok":true,
-            "statusText":"ok"
-        },
-        {
-            "code":"88134-122",
-            "state":"SC",
-            "city":"Palhoça",
-            "district":"Barra do Aririú",
-            "address":"Rua Olávio de Biase (Loteamento Vila Nova)",
-            "status":200,
-            "ok":true,
-            "statusText":"ok"
-        }
-    ]
+    "Carro": [{
+        "placa":"LUC4S69",
+        "marca":"Chevrolet",
+        "modelo":"Opala SS",
+        "ano":"2000"
+       
+},
+{
+        
+    "placa":"ABC1D23",
+    "marca":"Volkswagen",
+    "modelo":"Brasília",
+    "ano":"2002"
+   
+},
+{
+        
+    "placa":"LPD4S31",
+    "marca":"Fiat",
+    "modelo":"Uno Mille",
+    "ano":"2008"
+   
+},
+{
+        
+    "placa":"VIC1T03",
+    "marca":"Hyundai",
+    "modelo":"HB20",
+    "ano":"2024"
+   
+},
+{
+        
+    "placa":"EMA1N19",
+    "marca":"Toyota",
+    "modelo":"Supra",
+    "ano":"2023"
+   
+},
+{
+        
+    "placa":"GOS0T50",
+    "marca":"Renault",
+    "modelo":"Kwid",
+    "ano":"2010"
+   
+},
+{
+        
+    "placa":"BEE4R22",
+    "marca":"Fiat",
+    "modelo":"Argo",
+    "ano":"2021"
+   
+},
+{
+        
+    "placa":"JAI2R22",
+    "marca":"Chevrolet",
+    "modelo":"Onix",
+    "ano":"2022"
+   
+},
+{
+        
+    "placa":"FAZ0L13",
+    "marca":"Fiat",
+    "modelo":"Marea",
+    "ano":"1999"
+   
+},
+{
+        
+    "placa":"SIM4M05",
+    "marca":"Volkswagen",
+    "modelo":"Fusca",
+    "ano":"1949"
+   
 }
+]}

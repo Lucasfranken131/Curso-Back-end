@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1>Detran</h1>
+        <input type="text" id="placa" placeholder="Digite a placa">
+        <button onclick="katiau()">buscar</button>
+    </div>
+
+    <script>
+        let placa,marca,modelo,ano;
+        function definir(){
+        placa = document.getElementById("placa")
+        if(placa.value.lenght == 7){
+            return true
+        }
+        return false
+    }
+
+    function katiau(){
+        if(definir()){
+            placa.toUpCase()
+            var url = "./dados.json"
+            fetch(url)
+            .then(res =>
+            res.json())
+            .then(data => {
+                marca.value = data[0].marca;
+                modelo.value = data[0].modelo;
+                ano.value = data[0].ano;
+                alert("Foi");
+            })
+        }
+        else{
+            alert("Errou.");
+        }
+    }
+    </script>
+        
+    </div>
+</body>
+</html>
